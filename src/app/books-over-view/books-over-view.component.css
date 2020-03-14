@@ -1,0 +1,15 @@
+.picture{
+    width: 200px;
+    height: 270px;
+}
+.pointer{
+    cursor: pointer;
+}
+.customC:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform .2s;
+}
+.card-picture{
+    width: 25px;
+}

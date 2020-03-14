@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+    <button routerLink="/booksOverview" class="btn btn-light mt-3"><img src="./../../assets/backspace.png"> Back</button>
+    <input [(ngModel)]="searchTearm" (keydown.enter)="search()"  (keydown.backspace)="clearSearch()" class="form-control mt-3" type="text" placeholder="Search" aria-label="Search">
+
+        <div class="row h-50 mt-3">
+
+          <div class="col-3 customC h-75" *ngFor="let book of books">
+            <div class="card mb-3">
+              <img [src]="book.url ? book.url : bookAvatar" class="card-img-top picture w-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{book.title}}</h5>
+                <p class="card-text">{{book.Description}}</p>
+                <p class="card-text"><b>Author:</b> {{book.Author}}</p>
+                <hr>
+                    <button type="button" (click)="routueToBOokDetailView(book.id,book.title,book.description,book.url)"
+                      class="btn btn-dark">See this book</button>
+              </div>
+            </div>
+          </div>
+        </div>     
+</div>

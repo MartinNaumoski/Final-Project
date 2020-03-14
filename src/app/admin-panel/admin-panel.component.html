@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <app-navbar></app-navbar>
+    <div class="container">
+        <!-- Default form register -->
+        <div class="text-center border border-light p-5 mb-5 h-75 bg-white" action="#!">
+
+            <p class="h4 mb-4">Add an article</p>
+
+     
+
+
+            <div class="form-row mb-4 mt-4">
+                <div class="col-12">
+                    <!-- First name -->
+                    <input name="title" type="text" [(ngModel)]="title" 
+                        class="form-control " placeholder="Enter title"
+                        [ngClass]="{'is-invalid': firstNameFlag}">
+                </div>
+
+            </div>
+
+            <div class="form-row mb-4 mt-4">
+                <div class="col-12">
+                    <!-- First name -->
+                    <input name="author" type="text" [(ngModel)]="Author" 
+                        class="form-control " placeholder="Enter author"
+                        [ngClass]="{'is-invalid': firstNameFlag}">
+                </div>
+
+            </div>
+
+            <div class="form-row mb-4 mt-4">
+                <div class="col-12">
+                    <!-- First name -->
+                    <textarea name="description" type="text" [(ngModel)]="Description" 
+                        class="form-control " placeholder="Enter description"
+                        ></textarea>
+                </div>
+
+            </div>
+            <div class="form-row mb-4 mt-4">
+                    <div class="col-12">
+                        <!-- First name -->
+                        <textarea name="description" type="text" [(ngModel)]="url" 
+                            class="form-control " placeholder="Enter url"
+                            ></textarea>
+                    </div>
+    
+                </div>
+            <button class="btn btn-info my-4 btn-block" (click)="addBook()">Add</button>
+
+
+
+            <hr>
+
+            <!-- Terms of service -->
+
+
+        </div>
+        <!-- Default form register -->
+    </div>
+
+    <!-- Default form login -->
+</body>
+
+<!-- /.container -->
+
+</html>

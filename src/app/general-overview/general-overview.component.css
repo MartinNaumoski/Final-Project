@@ -1,0 +1,12 @@
+.picture{
+    width: 424px;
+    height: 305px;
+}
+.pointer{
+    cursor: pointer;
+}
+.customC:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .2s;
+}
